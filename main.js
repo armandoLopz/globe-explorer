@@ -20,7 +20,13 @@ function ocultar() {
 
 function mostrarmexico() {
 
-    titulo = document.querySelector("h2")
+    var pin = document.querySelector(".pin");
+    pin.style.top = "170px";
+    pin.style.left = "185px";
+
+
+
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "México"
 
     texto = document.querySelector("p")
@@ -53,7 +59,7 @@ botonmostrar.addEventListener("click", mostrarbrasil)
 
 function mostrarbrasil() {
 
-    titulo = document.querySelector("h2")
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "Brasil"
 
     texto = document.querySelector("p")
@@ -85,7 +91,7 @@ botonmostrar.addEventListener("click", mostraresp)
 
 function mostraresp() {
 
-    titulo = document.querySelector("h2")
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "España"
 
 
@@ -117,7 +123,7 @@ botonmostrar.addEventListener("click", mostraralemania)
 
 function mostraralemania() {
 
-    titulo = document.querySelector("h2")
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "Alemania"
 
 
@@ -148,7 +154,7 @@ botonmostrar.addEventListener("click", mostrarchina)
 
 function mostrarchina() {
 
-    titulo = document.querySelector("h2")
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "China"
 
 
@@ -178,7 +184,7 @@ botonmostrar.addEventListener("click", mostrarindia)
 
 function mostrarindia() {
 
-    titulo = document.querySelector("h2")
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "India"
 
 
@@ -209,7 +215,7 @@ botonmostrar.addEventListener("click", mostrarsudafrica)
 
 function mostrarsudafrica() {
 
-    titulo = document.querySelector("h2")
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "Sudáfrica"
 
 
@@ -240,7 +246,7 @@ botonmostrar.addEventListener("click", mostrarmarruecos)
 
 function mostrarmarruecos() {
 
-    titulo = document.querySelector("h2")
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "Marruecos"
 
 
@@ -273,7 +279,7 @@ botonmostrar.addEventListener("click", mostraraustralia)
 
 function mostraraustralia() {
 
-    titulo = document.querySelector("h2")
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "Australia"
 
 
@@ -303,7 +309,7 @@ botonmostrar.addEventListener("click", mostrarnv)
 
 function mostrarnv() {
 
-    titulo = document.querySelector("h2")
+    titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "Nueva Zelanda"
 
     texto = document.querySelector("p")
