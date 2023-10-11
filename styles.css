@@ -5,17 +5,19 @@
 body {
     background-image: url('R.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
 .circle {
-    width: 420px;
-    height: 420px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
     border-radius: 50%;
     position: absolute;
-    top: 110px;
-    left: 300px;
+    top: 120px;
+    left: 380px;
     transform: rotateZ(23.5deg);
     z-index: 1;
 }
@@ -23,7 +25,8 @@ body {
 .earth {
     position: absolute;
     /* animation: animate 20s linear 1 forwards; */
-    background-image: url('/New-global-view.max-1000x1000.jpeg');
+    background-image: url('bg.jpeg');
+    background-size: 1200px;
     width: 10000px;
     height: 1000px;
     background-repeat: repeat-x;
@@ -65,8 +68,9 @@ body {
 
 
 #contenedor {
-
+    font-family: Helvetica, Arial, sans-serif;
     overflow: hidden;
+    margin-left: 2em;
 }
 
 button {
@@ -80,9 +84,11 @@ button {
 }
 
 h1 {
-    margin: 5px auto 10px auto;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin: 1em auto 0.5em auto ;
+    margin-left: 31%;
     color: white;
-    text-align: center;
 
 }
 
@@ -104,8 +110,8 @@ h1 {
 
 #campo {
     position: absolute;
-    top: 50px;
-    left: 850px;
+    top: 4.5em;
+    left: 47em;
     height: 80%;
     width: 28%;
     margin-left: 14%;
@@ -118,7 +124,7 @@ h1 {
 }
 
 #bandera {
-    margin-bottom: 2%;
+    margin: 0 2em 2em;
     display: block;
 
 }
@@ -129,11 +135,8 @@ p{
 }
 
 #regresar{
-
-    margin-top: 40%;
-    margin: 35%;
-    float: right;
     display: none;
+    margin: 2em auto auto auto;
 }
 
 #nom-pais{

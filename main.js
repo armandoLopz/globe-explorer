@@ -31,6 +31,10 @@ function mostrarmexico() {
 
     pin.style.top = "170px";
     pin.style.left = "185px";
+    plano.animate(
+        { transform: "translateX(0px)" },
+        { duration: 3000, fill: "forwards" }
+    )
 
     titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "México"
