@@ -7,10 +7,19 @@ botonocultar.addEventListener("click", ocultar)
 //Variables para mostrar el contenido 
 var titulo, texto, fotomostrar
 
-
+var pin = document.querySelector(".pin");
+var plano = document.querySelector(".earth")
+var titulo = document.querySelector("#nom-pais")
+var texto = document.querySelector("p")
+var fotomostrar = document.querySelector("img")
 // FUNCION PARA OCULTAR EL CONTENIDO
 function ocultar() {
-
+    pin.style.top = "200px";
+    pin.style.left = "260px";
+    plano.animate(
+        { transform: "translateX(0px)" },
+        { duration: 3000, fill: "forwards" }
+    )
     document.getElementById("campo").style.display = "none"
     document.getElementById("bandera").style.display = "none"
 
@@ -20,7 +29,6 @@ function ocultar() {
 
 function mostrarmexico() {
 
-    var pin = document.querySelector(".pin");
     pin.style.top = "170px";
     pin.style.left = "185px";
 
@@ -49,7 +57,13 @@ botonmostrar.addEventListener("click", mostrarbrasil)
 
 function mostrarbrasil() {
 
-    titulo = document.querySelector("#nom-pais")
+    pin.style.top = "250px";
+    pin.style.left = "350px";
+    plano.animate(
+        { transform: "translateX(0px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+
     titulo.innerHTML = "Brasil"
 
     texto = document.querySelector("p")
@@ -58,8 +72,6 @@ function mostrarbrasil() {
     Lugares turísticos: Cristo Redentor, Cataratas del Iguazú, Pan de Azúcar.
     Producto interno bruto (PIB): 1.924.134 M$`
 
-
-    fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "brasil.png")
 
 
@@ -76,8 +88,12 @@ botonmostrar = document.getElementById("pais3")
 botonmostrar.addEventListener("click", mostraresp)
 
 function mostraresp() {
-
-    titulo = document.querySelector("#nom-pais")
+    pin.style.top = "110px";
+    pin.style.left = "60px";
+    plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 3000, fill: "forwards" }
+    )
     titulo.innerHTML = "España"
 
 
@@ -103,8 +119,14 @@ botonmostrar.addEventListener("click", mostraralemania)
 
 function mostraralemania() {
 
-    titulo = document.querySelector("#nom-pais")
-    titulo.innerHTML = "Alemania"
+    plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "70px";
+    pin.style.left = "70px";
+    titulo.innerHTML = "Reino Unido"
+
 
 
     texto = document.querySelector("p")
@@ -128,7 +150,12 @@ botonmostrar.addEventListener("click", mostrarchina)
 
 function mostrarchina() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "110px";
+    pin.style.left = "130px";
     titulo.innerHTML = "China"
 
 
@@ -138,7 +165,6 @@ function mostrarchina() {
     Lugares turísticos: Gran muralla, la Ciudad Prohibida en Beijing, las Montañas de Guilin.
     Producto interno bruto (PIB): 17.174.722 M$`
 
-    fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "china.jpeg")
 
     document.getElementById("campo").style.display = "block"
@@ -154,7 +180,12 @@ botonmostrar.addEventListener("click", mostrarindia)
 
 function mostrarindia() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "170px";
+    pin.style.left = "40px";
     titulo.innerHTML = "India"
 
 
@@ -164,7 +195,7 @@ function mostrarindia() {
     Lugares turísticos: Taj Mahal, Templo Dorado, Fuerte Amber.
     Producto interno bruto (PIB): 2.661.796 M$`
 
-    fotomostrar = document.querySelector("img")
+
     fotomostrar.setAttribute("src", "india.png")
 
     document.getElementById("campo").style.display = "block"
@@ -180,7 +211,12 @@ botonmostrar.addEventListener("click", mostrarsudafrica)
 
 function mostrarsudafrica() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "315px";
+    pin.style.left = "140px";
     titulo.innerHTML = "Sudáfrica"
 
 
@@ -190,7 +226,7 @@ function mostrarsudafrica() {
     Lugares turísticos: Parque nacional Kruger, Ciudad del Cabo, Johannesburgo.
     Producto interno bruto (PIB): 384.964 M$`
 
-    fotomostrar = document.querySelector("img")
+
     fotomostrar.setAttribute("src", "sudafrica.png")
 
     document.getElementById("campo").style.display = "block"
@@ -205,7 +241,12 @@ botonmostrar.addEventListener("click", mostrarmarruecos)
 
 function mostrarmarruecos() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "160px";
+    pin.style.left = "40px";
     titulo.innerHTML = "Marruecos"
 
 
@@ -215,7 +256,7 @@ function mostrarmarruecos() {
     Lugares turísticos: Marrakech, Mezquita Hassan II, Palacio de la bahía.
     Producto interno bruto (PIB): 127.596 M$`
 
-    fotomostrar = document.querySelector("img")
+
     fotomostrar.setAttribute("src", "marruecos.png")
 
     document.getElementById("campo").style.display = "block"
@@ -231,7 +272,12 @@ botonmostrar.addEventListener("click", mostraraustralia)
 
 function mostraraustralia() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "290px";
+    pin.style.left = "190px";
     titulo.innerHTML = "Australia"
 
 
@@ -255,8 +301,12 @@ botonmostrar = document.getElementById("pais10")
 botonmostrar.addEventListener("click", mostrarnv)
 
 function mostrarnv() {
-
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "340px";
+    pin.style.left = "310px";
     titulo.innerHTML = "Nueva Zelanda"
 
     texto = document.querySelector("p")
@@ -265,7 +315,7 @@ function mostrarnv() {
     Lugares turísticos: Auckland, Queenstown, Wellington.
     Producto interno bruto (PIB): 233.016 M$`
 
-    fotomostrar = document.querySelector("img")
+
     fotomostrar.setAttribute("src", "nuevazelanda.png")
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
