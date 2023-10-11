@@ -7,10 +7,19 @@ botonocultar.addEventListener("click", ocultar)
 //Variables para mostrar el contenido 
 var titulo, texto, fotomostrar
 
-
+var pin = document.querySelector(".pin");
+var plano = document.querySelector(".earth")
+var titulo = document.querySelector("#nom-pais")
+var texto = document.querySelector("p")
+var fotomostrar = document.querySelector("img")
 // FUNCION PARA OCULTAR EL CONTENIDO
 function ocultar() {
-
+    pin.style.top = "200px";
+    pin.style.left = "260px";
+    plano.animate(
+        { transform: "translateX(0px)" },
+        { duration: 3000, fill: "forwards" }
+    )
     document.getElementById("campo").style.display = "none"
     document.getElementById("bandera").style.display = "none"
 
@@ -20,16 +29,13 @@ function ocultar() {
 
 function mostrarmexico() {
 
-    var pin = document.querySelector(".pin");
     pin.style.top = "170px";
     pin.style.left = "185px";
-
-
-
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(0px)" },
+        { duration: 3000, fill: "forwards" }
+    )
     titulo.innerHTML = "México"
-
-    texto = document.querySelector("p")
     texto.innerHTML = `1. Patrimonio cultural: México es conocido por su rica historia y patrimonio cultural. 
     'El país cuenta con numerosos sitios arqueológicos, como las antiguas ciudades mayas de Chichén Itzá y Tulum, 
     'así como con impresionantes monumentos coloniales, como la Catedral Metropolitana de la Ciudad de México.` +
@@ -41,8 +47,6 @@ function mostrarmexico() {
         `3. Artesanías: México es conocido por sus hermosas artesanías hechas a mano. 
      'Desde textiles tradicionales y cerámica hasta joyería y esculturas de madera, 
      'las artesanías mexicanas reflejan la rica cultura y tradiciones del país.`
-
-    fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "mexico.svg")
 
     document.getElementById("campo").style.display = "block"
@@ -59,10 +63,15 @@ botonmostrar.addEventListener("click", mostrarbrasil)
 
 function mostrarbrasil() {
 
-    titulo = document.querySelector("#nom-pais")
+    pin.style.top = "250px";
+    pin.style.left = "350px";
+    plano.animate(
+        { transform: "translateX(0px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+
     titulo.innerHTML = "Brasil"
 
-    texto = document.querySelector("p")
     texto.innerHTML = ` 1. Playas impresionantes: Brasil es famoso por sus hermosas playas, como Copacabana en Río de Janeiro y Praia do Forte en Bahía. 
     'Estas playas ofrecen arenas blancas, aguas cristalinas y una gran variedad de actividades acuáticas.` +
 
@@ -72,8 +81,6 @@ function mostrarbrasil() {
         `3. Cristo Redentor: La estatua del Cristo Redentor en Río de Janeiro es uno de los íconos más reconocibles de Brasil. 
     'Ubicada en la cima del Cerro del Corcovado, ofrece una vista panorámica impresionante de la ciudad y es un destino turístico muy popular.`
 
-
-    fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "brasil.png")
 
 
@@ -90,12 +97,14 @@ botonmostrar = document.getElementById("pais3")
 botonmostrar.addEventListener("click", mostraresp)
 
 function mostraresp() {
-
-    titulo = document.querySelector("#nom-pais")
+    pin.style.top = "110px";
+    pin.style.left = "60px";
+    plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 3000, fill: "forwards" }
+    )
     titulo.innerHTML = "España"
 
-
-    texto = document.querySelector("p")
     texto.innerHTML = `1. Arquitectura histórica: España cuenta con una gran cantidad de edificios históricos y monumentos impresionantes, como la Sagrada Familia en Barcelona, 
     'el Alhambra en Granada y la Catedral de Santiago de Compostela. 
     'Estas construcciones reflejan la rica historia y la influencia de diferentes culturas en el país.` +
@@ -106,7 +115,6 @@ function mostraresp() {
         `3. Playas y costa: España cuenta con hermosas playas a lo largo de su costa mediterránea y atlántica.
     'Destinos como Ibiza, Costa del Sol y las Islas Canarias atraen a turistas de todo el mundo que buscan disfrutar del sol, el mar y las actividades acuáticas.`
 
-    fotomostrar = document.querySelector("img")
 
     fotomostrar.setAttribute("src", "espana.png")
 
@@ -123,11 +131,16 @@ botonmostrar.addEventListener("click", mostraralemania)
 
 function mostraralemania() {
 
-    titulo = document.querySelector("#nom-pais")
-    titulo.innerHTML = "Alemania"
+    plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "70px";
+    pin.style.left = "70px";
+    titulo.innerHTML = "Reino Unido"
 
 
-    texto = document.querySelector("p")
+
     texto.innerHTML = `1. Castillos y palacios: Alemania es conocida por sus impresionantes castillos y palacios, como el castillo de Neuschwanstein y el palacio de Sanssouci. 
     'Estas construcciones históricas ofrecen una visión fascinante de la arquitectura y la historia del país.` +
 
@@ -138,7 +151,6 @@ function mostraralemania() {
     'Ciudades como Berlín, Múnich y Colonia ofrecen museos, galerías de arte, teatros y una escena musical diversa. 
     'Además, el país tiene una gran cantidad de sitios históricos, como el Muro de Berlín y el campo de concentración de Auschwitz.`
 
-    fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "alemania.png")
 
     document.getElementById("campo").style.display = "block"
@@ -154,11 +166,16 @@ botonmostrar.addEventListener("click", mostrarchina)
 
 function mostrarchina() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "110px";
+    pin.style.left = "130px";
     titulo.innerHTML = "China"
 
 
-    texto = document.querySelector("p")
+
     texto.innerHTML = `1. Gran Muralla China: La Gran Muralla China es una de las maravillas arquitectónicas más famosas del mundo y un símbolo icónico de China. 
     Con una longitud de más de 21,000 kilómetros, esta antigua fortificación ofrece impresionantes vistas panorámicas y una fascinante historia.` +
 
@@ -168,7 +185,6 @@ function mostrarchina() {
         `3. Tecnología e innovación: China se ha convertido en un líder mundial en tecnología e innovación. 
     'Desde la fabricación de productos electrónicos hasta la exploración espacial, China ha logrado avances significativos en diversos campos, lo que la convierte en un destino atractivo para aquellos interesados en la ciencia y la tecnología.`
 
-    fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "china.jpeg")
 
     document.getElementById("campo").style.display = "block"
@@ -184,11 +200,15 @@ botonmostrar.addEventListener("click", mostrarindia)
 
 function mostrarindia() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "170px";
+    pin.style.left = "40px";
     titulo.innerHTML = "India"
 
 
-    texto = document.querySelector("p")
     texto.innerHTML = `1. Diversidad cultural: India es conocida por su diversidad cultural, con más de 2,000 grupos étnicos y más de 1,600 idiomas hablados en todo el país.
      'Esta diversidad se refleja en sus tradiciones, festividades y cocina, que varían de una región a otra.` +
 
@@ -199,7 +219,7 @@ function mostrarindia() {
      'la mente y el espíritu. Muchos visitantes acuden a India en busca de tratamientos y terapias ayurvédicas, 
      'como masajes, yoga y meditación, para mejorar su bienestar general.`
 
-    fotomostrar = document.querySelector("img")
+
     fotomostrar.setAttribute("src", "india.png")
 
     document.getElementById("campo").style.display = "block"
@@ -215,11 +235,15 @@ botonmostrar.addEventListener("click", mostrarsudafrica)
 
 function mostrarsudafrica() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "315px";
+    pin.style.left = "140px";
     titulo.innerHTML = "Sudáfrica"
 
 
-    texto = document.querySelector("p")
     texto.innerHTML = `1. Safaris y vida salvaje: Sudáfrica es famosa por sus impresionantes parques nacionales y reservas de vida silvestre,
     ' donde los visitantes pueden disfrutar de safaris y ver de cerca animales icónicos como leones, elefantes, rinocerontes y jirafas.`+
 
@@ -230,7 +254,7 @@ function mostrarsudafrica() {
     'con viñedos pintorescos y bodegas que ofrecen degustaciones y visitas. Además, 
     'la gastronomía sudafricana es una fusión de influencias africanas, europeas y asiáticas, lo que la convierte en una experiencia culinaria única y deliciosa.`
 
-    fotomostrar = document.querySelector("img")
+
     fotomostrar.setAttribute("src", "sudafrica.png")
 
     document.getElementById("campo").style.display = "block"
@@ -246,11 +270,16 @@ botonmostrar.addEventListener("click", mostrarmarruecos)
 
 function mostrarmarruecos() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "160px";
+    pin.style.left = "40px";
     titulo.innerHTML = "Marruecos"
 
 
-    texto = document.querySelector("p")
+
     texto.innerHTML = `1. Medina de Marrakech: La medina de Marrakech es un laberinto de calles estrechas y bulliciosas llenas de tiendas, 
     'mercados y lugares históricos. Es un lugar vibrante y colorido donde los visitantes
      'pueden sumergirse en la cultura marroquí y disfrutar de la arquitectura tradicional.`+
@@ -263,7 +292,7 @@ function mostrarmarruecos() {
      'Desde especias y alfombras hasta artesanías y joyas, los visitantes pueden disfrutar de una experiencia de compra única mientras exploran 
      'los estrechos pasillos y regatean con los vendedores.`
 
-    fotomostrar = document.querySelector("img")
+
     fotomostrar.setAttribute("src", "marruecos.png")
 
     document.getElementById("campo").style.display = "block"
@@ -279,11 +308,16 @@ botonmostrar.addEventListener("click", mostraraustralia)
 
 function mostraraustralia() {
 
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "290px";
+    pin.style.left = "190px";
     titulo.innerHTML = "Australia"
 
 
-    texto = document.querySelector("p")
+
     texto.innerHTML = `1. Increíble biodiversidad: Australia es conocida por su increíble biodiversidad,
     'con una gran variedad de especies únicas y endémicas. Desde los icónicos canguros y koalas hasta los coloridos arrecifes de coral de la Gran Barrera de Coral, 
     'Australia ofrece una experiencia única para los amantes de la vida salvaje.` +
@@ -294,7 +328,7 @@ function mostraraustralia() {
 
         `3. Cultura aborigen: La cultura aborigen es una parte integral de la identidad australiana, y explorar y aprender sobre esta rica historia y tradiciones es una experiencia enriquecedora. 
     'Los visitantes pueden participar en actividades culturales, como pintura, danza y tallado, y aprender sobre la conexión espiritual de los aborígenes con la tierra.`
-    fotomostrar = document.querySelector("img")
+
     fotomostrar.setAttribute("src", "australia.png")
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
@@ -308,11 +342,14 @@ botonmostrar = document.getElementById("pais10")
 botonmostrar.addEventListener("click", mostrarnv)
 
 function mostrarnv() {
-
-    titulo = document.querySelector("#nom-pais")
+    plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 3000, fill: "forwards" }
+    )
+    pin.style.top = "340px";
+    pin.style.left = "310px";
     titulo.innerHTML = "Nueva Zelanda"
 
-    texto = document.querySelector("p")
     texto.innerHTML = `1. Paisajes impresionantes: Nueva Zelanda es famosa por sus paisajes espectaculares,
     'desde las majestuosas montañas de los Alpes del Sur hasta los fiordos escarpados de Milford Sound. También cuenta con hermosas playas, lagos cristalinos 
     'y extensos bosques nativos` +
@@ -324,7 +361,7 @@ function mostrarnv() {
         `3. Hospitalidad y amabilidad: Los neozelandeses son conocidos por su hospitalidad y amabilidad hacia los visitantes.
     'El país tiene una cultura acogedora y relajada, lo que hace que los viajeros se sientan bienvenidos y cómodos durante su estadía.`
 
-    fotomostrar = document.querySelector("img")
+
     fotomostrar.setAttribute("src", "nuevazelanda.png")
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"

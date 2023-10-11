@@ -9,32 +9,25 @@ body {
 }
 
 .circle {
-    width: 350px;
-    height: 350px;
+    width: 420px;
+    height: 420px;
     overflow: hidden;
     border-radius: 50%;
     position: absolute;
-    top: 130px;
-    left: 330px;
+    top: 110px;
+    left: 300px;
     transform: rotateZ(23.5deg);
     z-index: 1;
 }
 
 .earth {
     position: absolute;
-    /* animation: animate 150s linear infinite; */
+    /* animation: animate 20s linear 1 forwards; */
     background-image: url('/New-global-view.max-1000x1000.jpeg');
     width: 10000px;
     height: 1000px;
     background-repeat: repeat-x;
-}
-
-.plano1 {
-    transform: rotate(90deg);
-}
-
-.plano2 {
-    transform: translateX(-900)
+    transform: translateX(0px);
 }
 
 .content {
@@ -45,10 +38,6 @@ body {
     box-shadow: -20px -20px 40px 10px black inset;
 }
 
-.continents {
-    /* animation: animate-2 43s linear 3.5; */
-    width: 1000px;
-}
 
 @keyframes animate {
     from {
@@ -56,24 +45,12 @@ body {
     }
 
     to {
-        transform: translateX(-3500px);
-    }
-}
-
-@keyframes animate-2 {
-    from {
-        transform: translateX(0px);
-    }
-
-    to {
-        transform: translateX(-1000px);
+        transform: translateX(-400px);
     }
 }
 
 .pin {
     position: absolute;
-    top: 200px;
-    left: 140px;
     width: 10px;
     height: 10px;
     background-color: red;
@@ -81,38 +58,11 @@ body {
     transform: rotateZ(-23.5deg);
     cursor: pointer;
     transition: 0.2s ease;
-    z-index: 10;
-}
-
-.continent {
-    position: absolute;
-    transform: rotateZ(-23.5deg);
-}
-
-.one {
+    z-index: 3;
     top: 200px;
-    left: 140px;
+    left: 260px;
 }
 
-.three {
-    top: 80px;
-    left: 490px;
-}
-
-.four {
-    top: 200px;
-    left: 510px;
-}
-
-.five {
-    top: 100px;
-    left: 680px;
-}
-
-.six {
-    top: 290px;
-    left: 810px;
-}
 
 #contenedor {
 
