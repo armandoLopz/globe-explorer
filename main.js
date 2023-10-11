@@ -14,8 +14,8 @@ var texto = document.querySelector("p")
 var fotomostrar = document.querySelector("img")
 // FUNCION PARA OCULTAR EL CONTENIDO
 function ocultar() {
-    pin.style.top = "200px";
-    pin.style.left = "260px";
+    pin.style.top = "220px";
+    pin.style.left = "285px";
     plano.animate(
         { transform: "translateX(0px)" },
         { duration: 3000, fill: "forwards" }
@@ -29,8 +29,8 @@ function ocultar() {
 
 function mostrarmexico() {
 
-    pin.style.top = "170px";
-    pin.style.left = "185px";
+    pin.style.top = "185px";
+    pin.style.left = "200px";
     plano.animate(
         { transform: "translateX(0px)" },
         { duration: 3000, fill: "forwards" }
@@ -62,8 +62,8 @@ botonmostrar.addEventListener("click", mostrarbrasil)
 
 function mostrarbrasil() {
 
-    pin.style.top = "250px";
-    pin.style.left = "350px";
+    pin.style.top = "270px";
+    pin.style.left = "365px";
     plano.animate(
         { transform: "translateX(0px)" },
         { duration: 3000, fill: "forwards" }
@@ -94,8 +94,8 @@ botonmostrar = document.getElementById("pais3")
 botonmostrar.addEventListener("click", mostraresp)
 
 function mostraresp() {
-    pin.style.top = "110px";
-    pin.style.left = "60px";
+    pin.style.top = "125px";
+    pin.style.left = "115px";
     plano.animate(
         { transform: "translateX(-380px)" },
         { duration: 3000, fill: "forwards" }
@@ -130,8 +130,8 @@ function mostrarreinounido() {
         { transform: "translateX(-380px)" },
         { duration: 3000, fill: "forwards" }
     )
-    pin.style.top = "70px";
-    pin.style.left = "70px";
+    pin.style.top = "80px";
+    pin.style.left = "115px";
     titulo.innerHTML = "Reino Unido"
 
     texto = document.querySelector("p")
@@ -160,8 +160,8 @@ function mostrarchina() {
         { transform: "translateX(-640px)" },
         { duration: 3000, fill: "forwards" }
     )
-    pin.style.top = "110px";
-    pin.style.left = "130px";
+    pin.style.top = "120px";
+    pin.style.left = "210px";
     titulo.innerHTML = "China"
 
 
@@ -191,8 +191,8 @@ function mostrarindia() {
         { transform: "translateX(-640px)" },
         { duration: 3000, fill: "forwards" }
     )
-    pin.style.top = "170px";
-    pin.style.left = "40px";
+    pin.style.top = "180px";
+    pin.style.left = "110px";
     titulo.innerHTML = "India"
 
 
@@ -223,8 +223,8 @@ function mostrarsudafrica() {
         { transform: "translateX(-380px)" },
         { duration: 3000, fill: "forwards" }
     )
-    pin.style.top = "315px";
-    pin.style.left = "140px";
+    pin.style.top = "340px";
+    pin.style.left = "200px";
     titulo.innerHTML = "Sudáfrica"
 
 
@@ -255,8 +255,8 @@ function mostrarmarruecos() {
         { transform: "translateX(-380px)" },
         { duration: 3000, fill: "forwards" }
     )
-    pin.style.top = "160px";
-    pin.style.left = "40px";
+    pin.style.top = "170px";
+    pin.style.left = "85px";
     titulo.innerHTML = "Marruecos"
 
 
@@ -284,11 +284,11 @@ botonmostrar.addEventListener("click", mostraraustralia)
 function mostraraustralia() {
 
     plano.animate(
-        { transform: "translateX(-640px)" },
+        { transform: "translateX(-760px)" },
         { duration: 3000, fill: "forwards" }
     )
-    pin.style.top = "290px";
-    pin.style.left = "190px";
+    pin.style.top = "330px";
+    pin.style.left = "150px";
     titulo.innerHTML = "Australia"
 
 
@@ -314,11 +314,11 @@ botonmostrar.addEventListener("click", mostrarnv)
 
 function mostrarnv() {
     plano.animate(
-        { transform: "translateX(-640px)" },
+        { transform: "translateX(-760px)" },
         { duration: 3000, fill: "forwards" }
     )
-    pin.style.top = "340px";
-    pin.style.left = "310px";
+    pin.style.top = "385px";
+    pin.style.left = "270px";
     titulo.innerHTML = "Nueva Zelanda"
 
     texto = document.querySelector("p")

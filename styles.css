@@ -11,12 +11,12 @@ body {
 }
 
 .circle {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     overflow: hidden;
     border-radius: 50%;
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 380px;
     transform: rotateZ(23.5deg);
     z-index: 1;
@@ -26,7 +26,7 @@ body {
     position: absolute;
     /* animation: animate 20s linear 1 forwards; */
     background-image: url('bg.jpeg');
-    background-size: 1200px;
+    background-size: 1100px;
     width: 10000px;
     height: 1000px;
     background-repeat: repeat-x;
@@ -62,8 +62,8 @@ body {
     cursor: pointer;
     transition: 0.2s ease;
     z-index: 3;
-    top: 200px;
-    left: 260px;
+    top: 220px;
+    left: 285px;
 }
 
 
