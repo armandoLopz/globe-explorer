@@ -36,9 +36,9 @@ function mostrarmexico() {
     titulo.innerHTML = "México"
 
     texto = document.querySelector("p")
-    texto.innerHTML =  `Presidente: Andrés Manuel López Obrador.
-    Platos típicos: Tacos al pastor, Mole poblano, Pozole.
-    Lugares turísticos: Chichén Itzá, Ciudad de México, Cancún
+    texto.innerHTML =  `Presidente: Andrés Manuel López Obrador. <br> <br>
+    Platos típicos: Tacos al pastor, Mole poblano, Pozole. <br> <br>
+    Lugares turísticos: Chichén Itzá, Ciudad de México, Cancún <br> <br>
     Producto Interno Bruto (PIB): 1.05 billones de dólares.`
     fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "mexico.svg")
@@ -46,6 +46,7 @@ function mostrarmexico() {
     document.getElementById("regresar").style.display ="block"
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
+    document.getElementById("textoinicio").style.display ="none"
 
 }
 
@@ -67,9 +68,9 @@ function mostrarbrasil() {
     titulo.innerHTML = "Brasil"
 
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Luiz Inácio Lula da Silva.
-    Platos tipico: Feijoada, Acarajé, Pan de Queso.
-    Lugares turísticos: Cristo Redentor, Cataratas del Iguazú, Pan de Azúcar.
+    texto.innerHTML = `Presidente: Luiz Inácio Lula da Silva. <br> <br>
+    Platos típicos: Feijoada, Acarajé, Pan de Queso. <br><br>
+    Lugares turísticos: Cristo Redentor, Cataratas del Iguazú, Pan de Azúcar.<br><br>
     Producto interno bruto (PIB): 1.924.134 M$`
 
     fotomostrar.setAttribute("src", "brasil.png")
@@ -77,7 +78,8 @@ function mostrarbrasil() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-
+    document.getElementById("regresar").style.display ="block"
+    document.getElementById("textoinicio").style.display ="none"
 }
 
 
@@ -98,9 +100,9 @@ function mostraresp() {
 
 
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Pedro Sánchez.
-    Platos tipico: Las tapas, Paella, Tortilla de papa.
-    Lugares turísticos: Isla de Tabarca, Formentera, Basílica de la Sagrada Família.
+    texto.innerHTML = `Presidente: Pedro Sánchez.<br><br>
+    Platos típicos: Las tapas, Paella, Tortilla de papa.<br><br>
+    Lugares turísticos: Isla de Tabarca, Formentera, Basílica de la Sagrada Família.<br><br>
     Producto interno bruto (PIB): 1.400,52M$`
     fotomostrar = document.querySelector("img")
 
@@ -108,16 +110,17 @@ function mostraresp() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-
+    document.getElementById("regresar").style.display ="block"
+    document.getElementById("textoinicio").style.display ="none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE ALEMANIA
 
 botonmostrar = document.getElementById("pais4")
 
-botonmostrar.addEventListener("click", mostraralemania)
+botonmostrar.addEventListener("click", mostrarreinounido)
 
-function mostraralemania() {
+function mostrarreinounido() {
 
     plano.animate(
         { transform: "translateX(-380px)" },
@@ -127,19 +130,18 @@ function mostraralemania() {
     pin.style.left = "70px";
     titulo.innerHTML = "Reino Unido"
 
-
-
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Frank-Walter Steinmeier.
-    Platos tipico: Brezel, Knödel, Salchichas.
-    Lugares turísticos: Europa-Park, Miniatur Wunderland Hamburg, muro de Berlín.
-    Producto interno bruto (PIB): 4.075.395 M$`
+    texto.innerHTML = `Presidente: Boris Johnson.<br><br>
+    Platos típicos: Fish & chips, cream tea, falafel.<br><br>
+    Lugares turísticos: Torre de Londres, Museo Británico, Puente de la Torre.<br><br>
+    Producto interno bruto (PIB): 2.913.623 M$`
     fotomostrar = document.querySelector("img")
-    fotomostrar.setAttribute("src", "alemania.png")
+    fotomostrar.setAttribute("src", "reino.avif")
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-
+    document.getElementById("regresar").style.display ="block"
+    document.getElementById("textoinicio").style.display ="none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE CHINA
@@ -160,16 +162,17 @@ function mostrarchina() {
 
 
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Xi Jinping.
-    Platos tipico: El pato Pekinés, Sopa Wan Tan, Zongzi.
-    Lugares turísticos: Gran muralla, la Ciudad Prohibida en Beijing, las Montañas de Guilin.
+    texto.innerHTML = `Presidente: Xi Jinping.<br><br>
+    Platos típicos: El pato Pekinés, Sopa Wan Tan, Zongzi.<br><br>
+    Lugares turísticos: Gran muralla, la Ciudad Prohibida en Beijing, las Montañas de Guilin.<br><br>
     Producto interno bruto (PIB): 17.174.722 M$`
 
     fotomostrar.setAttribute("src", "china.jpeg")
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-
+    document.getElementById("regresar").style.display ="block"
+    document.getElementById("textoinicio").style.display ="none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE INDIA
@@ -190,9 +193,9 @@ function mostrarindia() {
 
 
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Draupadi Murmu.
-    Platos tipico: Samosas, Biryani, Pollo tikka masala.
-    Lugares turísticos: Taj Mahal, Templo Dorado, Fuerte Amber.
+    texto.innerHTML = `Presidente: Draupadi Murmu.<br><br>
+    Platos típicos: Samosas, Biryani, Pollo tikka masala.<br><br>
+    Lugares turísticos: Taj Mahal, Templo Dorado, Fuerte Amber.<br><br>
     Producto interno bruto (PIB): 2.661.796 M$`
 
 
@@ -200,7 +203,8 @@ function mostrarindia() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-
+    document.getElementById("regresar").style.display ="block"
+    document.getElementById("textoinicio").style.display ="none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE SUDAFRICA
@@ -221,9 +225,9 @@ function mostrarsudafrica() {
 
 
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Cyril Ramaphosa.
-    Platos tipico: Amasi, Biltong, Bobotie.
-    Lugares turísticos: Parque nacional Kruger, Ciudad del Cabo, Johannesburgo.
+    texto.innerHTML = `Presidente: Cyril Ramaphosa.<br><br>
+    Platos típicos: Amasi, Biltong, Bobotie.<br><br>
+    Lugares turísticos: Parque nacional Kruger, Ciudad del Cabo, Johannesburgo.<br><br>
     Producto interno bruto (PIB): 384.964 M$`
 
 
@@ -231,6 +235,8 @@ function mostrarsudafrica() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
+    document.getElementById("regresar").style.display ="block"
+    document.getElementById("textoinicio").style.display ="none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE MARRUECOS
@@ -251,9 +257,9 @@ function mostrarmarruecos() {
 
 
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Mohamed VI.
-    Platos tipico: Tajines, Cuscús con verduras, Kefta.
-    Lugares turísticos: Marrakech, Mezquita Hassan II, Palacio de la bahía.
+    texto.innerHTML = `Presidente: Mohamed VI.<br><br>
+    Platos típicos: Tajines, Cuscús con verduras, Kefta.<br><br>
+    Lugares turísticos: Marrakech, Mezquita Hassan II, Palacio de la bahía.<br><br>
     Producto interno bruto (PIB): 127.596 M$`
 
 
@@ -261,7 +267,8 @@ function mostrarmarruecos() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-
+    document.getElementById("regresar").style.display ="block"
+    document.getElementById("textoinicio").style.display ="none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE AUSTRALIA
@@ -282,16 +289,17 @@ function mostraraustralia() {
 
 
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Anthony Albanese.
-    Platos tipico: meatloaf, Pavlova, hoki.
-    Lugares turísticos: Ópera de Sídney, Uluru, Gran Barrera de Coral.
+    texto.innerHTML = `Presidente: Anthony Albanese.<br><br>
+    Platos típicos: meatloaf, Pavlova, hoki.<br><br>
+    Lugares turísticos: Ópera de Sídney, Uluru, Gran Barrera de Coral.<br><br>
     Producto interno bruto (PIB): 1.701.893 M$`
 
     fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "australia.png")
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-
+    document.getElementById("regresar").style.display ="block"
+    document.getElementById("textoinicio").style.display ="none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE NUEVA ZELANDA
@@ -310,16 +318,18 @@ function mostrarnv() {
     titulo.innerHTML = "Nueva Zelanda"
 
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Chris Hipkins.
-    Platos tipico: Hangi maorí, Asado Hogget, teririki.
-    Lugares turísticos: Auckland, Queenstown, Wellington.
+    texto.innerHTML = `Presidente: Chris Hipkins.<br><br>
+    Platos típicos: Hangi maorí, Asado Hogget, teririki.<br><br>
+    Lugares turísticos: Auckland, Queenstown, Wellington.<br><br>
     Producto interno bruto (PIB): 233.016 M$`
 
 
     fotomostrar.setAttribute("src", "nuevazelanda.png")
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-
+    document.getElementById("regresar").style.display ="block"
+    document.getElementById("textoinicio").style.display ="none"
+    
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE VENEZUELA
@@ -333,17 +343,17 @@ function mostrarve() {
     titulo.innerHTML = "Venezuela"
 
     texto = document.querySelector("p")
-    texto.innerHTML = `Presidente: Nicolás Maduro.
-    'Platos tipico: arepa, pabellón criollo, cachapa.
-    'Lugares turísticos: Parque Nacional Morrocoy, Archipiélago Los Roques, Colonia Tovar.
-    'Producto interno bruto (PIB): 113.055 M€`
+    texto.innerHTML = `Presidente: Nicolás Maduro.<br><br>
+     Platos típicos: arepa, pabellón criollo, cachapa.<br><br>
+     Lugares turísticos: Parque Nacional Morrocoy, Archipiélago Los Roques, Colonia Tovar.<br><br>
+     Producto interno bruto (PIB): 113.055 M€`
 
     fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src","venezuela.png")
 
-    //document.getElementById("regresar").style.display ="none"
-
+    
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    
+    document.getElementById("regresar").style.display ="none"
+    document.getElementById("textoinicio").style.display ="none"
 }
