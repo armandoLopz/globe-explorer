@@ -155,7 +155,7 @@ function mostrarreinounido() {
     Extensión territorial: 243.610 km². <br> <br>
     Producto interno bruto (PIB): 2.913.623 M$`
     fotomostrar = document.querySelector("img")
-    fotomostrar.setAttribute("src", "reino.avif")
+    fotomostrar.setAttribute("src", "reino.png")
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
