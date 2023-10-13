@@ -61,8 +61,8 @@ body {
     cursor: pointer;
     transition: 0.2s ease;
     z-index: 3;
-    top: 220px;
-    left: 285px;
+    top: 200px;
+    left: 260px;
 }
 
 
@@ -128,14 +128,14 @@ h1 {
 
 @keyframes cambiocolor {
 
-    0%{
+    0% {
         opacity: 0%;
     }
 
-    100%{
+    100% {
         opacity: 100%;
     }
-    
+
 }
 
 #bandera {
@@ -143,7 +143,7 @@ h1 {
     display: block;
 }
 
-img{
+img {
 
     animation-name: imagenm;
     animation-duration: 2.3s;
@@ -154,15 +154,15 @@ img{
 
 @keyframes imagenm {
 
-    0%{
-       opacity: 0%;
+    0% {
+        opacity: 0%;
     }
 
-    100%{
-        
+    100% {
+
         opacity: 100%;
     }
-    
+
 }
 
 p {
