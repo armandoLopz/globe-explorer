@@ -120,15 +120,73 @@ h1 {
     display: block;
     text-align: justify;
 
+    animation-name: cambiocolor;
+    animation-duration: 2.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes cambiocolor {
+
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+    
 }
 
 #bandera {
     margin: 0 2em 2em;
     display: block;
 
+    animation-name: banderatm;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+
+}
+
+
+/*@keyframes banderatm {
+
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+
+    100%{
+        width: 300px;
+        height: 180px;
+    }
+    
+}*/
+
+img{
+
+    animation-name: imagenm;
+    animation-duration: 2.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+}
+
+@keyframes imagenm {
+
+    0%{
+       opacity: 0%;
+    }
+
+    100%{
+        
+        opacity: 100%;
+    }
+    
 }
 
 p {
+
     margin-left: 1.5%;
     margin-right: 1.8%
 }
