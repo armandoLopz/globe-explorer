@@ -141,27 +141,7 @@ h1 {
 #bandera {
     margin: 0 2em 2em;
     display: block;
-
-    animation-name: banderatm;
-    animation-duration: 1.4s;
-    animation-fill-mode: forwards;
-
 }
-
-
-/*@keyframes banderatm {
-
-    0%{
-        width: 0px;
-        height: 0px;
-    }
-
-    100%{
-        width: 300px;
-        height: 180px;
-    }
-    
-}*/
 
 img{
 

@@ -57,6 +57,12 @@ function mostrarmexico() {
     fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "mexico.svg")
 
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
 
     document.getElementById("regresar").style.display = "block"
 
@@ -99,6 +105,12 @@ function mostrarbrasil() {
 
     fotomostrar.setAttribute("src", "brasil.png")
 
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
@@ -126,7 +138,6 @@ function mostraresp() {
     };
     titulo.innerHTML = "España"
 
-
     texto = document.querySelector("p")
     texto.innerHTML = `Presidente: Pedro Sánchez.<br><br>
     Capital: Madrid. <br> <br>
@@ -136,13 +147,23 @@ function mostraresp() {
     Extensión territorial: 506.030 km². <br> <br>
     Producto interno bruto (PIB): 1.400,52M$`
     fotomostrar = document.querySelector("img")
-
+    
+    
     fotomostrar.setAttribute("src", "espana.png")
+   
+        campo.animate(
+            {
+              opacity: [0, 1]
+            },
+            2100,
+          );
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
     document.getElementById("regresar").style.display = "block"
     document.getElementById("textoinicio").style.display = "none"
+        
+    
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE ALEMANIA
@@ -174,6 +195,13 @@ function mostrarreinounido() {
     Producto interno bruto (PIB): 2.913.623 M$`
     fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "reino.png")
+
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
@@ -213,6 +241,13 @@ function mostrarchina() {
 
     fotomostrar.setAttribute("src", "china.jpeg")
 
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
+
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
     document.getElementById("regresar").style.display = "block"
@@ -249,8 +284,14 @@ function mostrarindia() {
     Extensión territorial: 9,597 millones km². <br> <br>
     Producto interno bruto (PIB): 2.661.796 M$`
 
-
     fotomostrar.setAttribute("src", "india.png")
+
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
@@ -289,8 +330,14 @@ function mostrarsudafrica() {
     Extensión territorial: 1,22 millones km². <br> <br>
     Producto interno bruto (PIB): 384.964 M$`
 
-
     fotomostrar.setAttribute("src", "sudafrica.png")
+
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
@@ -330,8 +377,14 @@ function mostrarmarruecos() {
     Extensión territorial: 710.850 km². <br> <br>
     Producto interno bruto (PIB): 127.596 M$`
 
-
     fotomostrar.setAttribute("src", "marruecos.png")
+
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
@@ -359,7 +412,6 @@ function mostraraustralia() {
 
     titulo.innerHTML = "Australia"
 
-
     texto = document.querySelector("p")
     texto.innerHTML = `Presidente: Anthony Albanese.<br><br>
     Capital: Canberra. <br> <br>
@@ -371,11 +423,22 @@ function mostraraustralia() {
 
     fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "australia.png")
+
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
+
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
     document.getElementById("regresar").style.display = "block"
     document.getElementById("textoinicio").style.display = "none"
+
 }
+
+
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE NUEVA ZELANDA
 
@@ -407,6 +470,14 @@ function mostrarnv() {
     Producto interno bruto (PIB): 233.016 M$`
 
     fotomostrar.setAttribute("src", "nuevazelanda.png")
+
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
+
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
     document.getElementById("regresar").style.display = "block"
@@ -434,6 +505,13 @@ function mostrarve() {
 
     fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "venezuela.png")
+
+    campo.animate(
+        {
+          opacity: [0, 1]
+        },
+        2100,
+      );
 
 
     document.getElementById("campo").style.display = "block"
