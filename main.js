@@ -1,6 +1,6 @@
 var botonmostrar = document.getElementById("pais1")
 var botonocultar = document.getElementById("regresar")
-
+//1234
 botonmostrar.addEventListener("click", mostrarmexico)
 botonocultar.addEventListener("click", ocultar)
 
