@@ -14,12 +14,16 @@ var texto = document.querySelector("p")
 var fotomostrar = document.querySelector("img")
 // FUNCION PARA OCULTAR EL CONTENIDO
 function ocultar() {
+    pin.style.display = "none";
     pin.style.top = "220px";
     pin.style.left = "285px";
-    plano.animate(
+    var h = plano.animate(
         { transform: "translateX(0px)" },
-        { duration: 3000, fill: "forwards" }
+        { duration: 800, fill: "forwards" }
     )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
     document.getElementById("campo").style.display = "none"
     document.getElementById("bandera").style.display = "none"
 
@@ -28,13 +32,16 @@ function ocultar() {
 //FUNCION PARA MOSTRAR EL CONTENIDO DE MEXICO
 
 function mostrarmexico() {
-
+    pin.style.display = "none";
     pin.style.top = "185px";
     pin.style.left = "200px";
-    plano.animate(
+    var h = plano.animate(
         { transform: "translateX(0px)" },
-        { duration: 3000, fill: "forwards" }
-    )    
+        { duration: 800, fill: "forwards" }
+    )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
 
     titulo = document.querySelector("#nom-pais")
     titulo.innerHTML = "México"
@@ -50,11 +57,12 @@ function mostrarmexico() {
     fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "mexico.svg")
 
-    
-    document.getElementById("regresar").style.display ="block"
+
+    document.getElementById("regresar").style.display = "block"
+
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("textoinicio").style.display = "none"
 
 }
 
@@ -66,13 +74,16 @@ botonmostrar = document.getElementById("pais2")
 botonmostrar.addEventListener("click", mostrarbrasil)
 
 function mostrarbrasil() {
-
+    pin.style.display = "none";
     pin.style.top = "270px";
     pin.style.left = "365px";
-    plano.animate(
+    var h = plano.animate(
         { transform: "translateX(0px)" },
-        { duration: 3000, fill: "forwards" }
+        { duration: 800, fill: "forwards" }
     )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
 
 
     titulo.innerHTML = "Brasil"
@@ -91,8 +102,8 @@ function mostrarbrasil() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 
@@ -103,12 +114,16 @@ botonmostrar = document.getElementById("pais3")
 botonmostrar.addEventListener("click", mostraresp)
 
 function mostraresp() {
+    pin.style.display = "none";
     pin.style.top = "125px";
     pin.style.left = "115px";
-    plano.animate(
+    var h = plano.animate(
         { transform: "translateX(-380px)" },
-        { duration: 3000, fill: "forwards" }
+        { duration: 800, fill: "forwards" }
     )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
     titulo.innerHTML = "España"
 
 
@@ -126,8 +141,8 @@ function mostraresp() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE ALEMANIA
@@ -137,13 +152,16 @@ botonmostrar = document.getElementById("pais4")
 botonmostrar.addEventListener("click", mostrarreinounido)
 
 function mostrarreinounido() {
-
-    plano.animate(
-        { transform: "translateX(-380px)" },
-        { duration: 3000, fill: "forwards" }
-    )
+    pin.style.display = "none";
     pin.style.top = "80px";
     pin.style.left = "115px";
+    var h = plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 800, fill: "forwards" }
+    )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
     titulo.innerHTML = "Reino Unido"
 
     texto = document.querySelector("p")
@@ -159,8 +177,8 @@ function mostrarreinounido() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE CHINA
@@ -170,13 +188,17 @@ botonmostrar = document.getElementById("pais5")
 botonmostrar.addEventListener("click", mostrarchina)
 
 function mostrarchina() {
-
-    plano.animate(
-        { transform: "translateX(-640px)" },
-        { duration: 3000, fill: "forwards" }
-    )
+    pin.style.display = "none";
     pin.style.top = "120px";
     pin.style.left = "210px";
+    var h = plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 800, fill: "forwards" }
+    )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
+
     titulo.innerHTML = "China"
 
 
@@ -193,8 +215,8 @@ function mostrarchina() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE INDIA
@@ -204,13 +226,17 @@ botonmostrar = document.getElementById("pais6")
 botonmostrar.addEventListener("click", mostrarindia)
 
 function mostrarindia() {
-
-    plano.animate(
-        { transform: "translateX(-640px)" },
-        { duration: 3000, fill: "forwards" }
-    )
+    pin.style.display = "none";
     pin.style.top = "180px";
     pin.style.left = "110px";
+    var h = plano.animate(
+        { transform: "translateX(-640px)" },
+        { duration: 800, fill: "forwards" }
+    )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
+
     titulo.innerHTML = "India"
 
 
@@ -228,8 +254,8 @@ function mostrarindia() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE SUDAFRICA
@@ -240,14 +266,17 @@ botonmostrar.addEventListener("click", mostrarsudafrica)
 
 function mostrarsudafrica() {
 
-    plano.animate(
-        { transform: "translateX(-380px)" },
-        { duration: 3000, fill: "forwards" }
-    )
-      
+    pin.style.display = "none";
     pin.style.top = "340px";
     pin.style.left = "200px";
-    
+    var h = plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 800, fill: "forwards" }
+    )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
+
     titulo.innerHTML = "Sudáfrica"
 
 
@@ -265,8 +294,9 @@ function mostrarsudafrica() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 
 }
 
@@ -277,13 +307,17 @@ botonmostrar = document.getElementById("pais8")
 botonmostrar.addEventListener("click", mostrarmarruecos)
 
 function mostrarmarruecos() {
-
-    plano.animate(
-        { transform: "translateX(-380px)" },
-        { duration: 3000, fill: "forwards" }
-    )
-    pin.style.top = "170px";
+    pin.style.display = "none";
+    pin.style.top = "160px";
     pin.style.left = "85px";
+    var h = plano.animate(
+        { transform: "translateX(-380px)" },
+        { duration: 800, fill: "forwards" }
+    )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
+
     titulo.innerHTML = "Marruecos"
 
 
@@ -301,8 +335,8 @@ function mostrarmarruecos() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE AUSTRALIA
@@ -312,13 +346,17 @@ botonmostrar = document.getElementById("pais9")
 botonmostrar.addEventListener("click", mostraraustralia)
 
 function mostraraustralia() {
-
-    plano.animate(
-        { transform: "translateX(-760px)" },
-        { duration: 3000, fill: "forwards" }
-    )
+    pin.style.display = "none";
     pin.style.top = "330px";
     pin.style.left = "150px";
+    var h = plano.animate(
+        { transform: "translateX(-760px)" },
+        { duration: 800, fill: "forwards" }
+    )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
+
     titulo.innerHTML = "Australia"
 
 
@@ -335,8 +373,8 @@ function mostraraustralia() {
     fotomostrar.setAttribute("src", "australia.png")
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE NUEVA ZELANDA
@@ -346,12 +384,17 @@ botonmostrar = document.getElementById("pais10")
 botonmostrar.addEventListener("click", mostrarnv)
 
 function mostrarnv() {
-    plano.animate(
-        { transform: "translateX(-760px)" },
-        { duration: 3000, fill: "forwards" }
-    )
-    pin.style.top = "385px";
+    pin.style.display = "none";
+    pin.style.top = "375px";
     pin.style.left = "270px";
+    var h = plano.animate(
+        { transform: "translateX(-760px)" },
+        { duration: 800, fill: "forwards" }
+    )
+    h.onfinish = function () {
+        pin.style.display = "block";
+    };
+
     titulo.innerHTML = "Nueva Zelanda"
 
     texto = document.querySelector("p")
@@ -366,9 +409,9 @@ function mostrarnv() {
     fotomostrar.setAttribute("src", "nuevazelanda.png")
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
-    
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
+
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE VENEZUELA
@@ -390,11 +433,11 @@ function mostrarve() {
      Producto interno bruto (PIB): 113.055 M€`
 
     fotomostrar = document.querySelector("img")
-    fotomostrar.setAttribute("src","venezuela.png")
+    fotomostrar.setAttribute("src", "venezuela.png")
 
-    
+
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="none"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "none"
+    document.getElementById("textoinicio").style.display = "none"
 }
