@@ -28,10 +28,9 @@ function ocultar() {
 //FUNCION PARA MOSTRAR EL CONTENIDO DE MEXICO
 
 function mostrarmexico() {
-
     pin.style.top = "185px";
     pin.style.left = "200px";
-    plano.animate(
+    var h = plano.animate(
         { transform: "translateX(0px)" },
         { duration: 3000, fill: "forwards" }
     )
@@ -40,17 +39,17 @@ function mostrarmexico() {
     titulo.innerHTML = "México"
 
     texto = document.querySelector("p")
-    texto.innerHTML =  `Presidente: Andrés Manuel López Obrador. <br> <br>
+    texto.innerHTML = `Presidente: Andrés Manuel López Obrador. <br> <br>
     Platos típicos: Tacos al pastor, Mole poblano, Pozole. <br> <br>
     Lugares turísticos: Chichén Itzá, Ciudad de México, Cancún <br> <br>
     Producto Interno Bruto (PIB): 1.05 billones de dólares.`
     fotomostrar = document.querySelector("img")
     fotomostrar.setAttribute("src", "mexico.svg")
 
-    document.getElementById("regresar").style.display ="block"
+    document.getElementById("regresar").style.display = "block"
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("textoinicio").style.display = "none"
 
 }
 
@@ -82,8 +81,8 @@ function mostrarbrasil() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 
@@ -114,8 +113,8 @@ function mostraresp() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE ALEMANIA
@@ -144,8 +143,8 @@ function mostrarreinounido() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE CHINA
@@ -175,8 +174,8 @@ function mostrarchina() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE INDIA
@@ -207,8 +206,8 @@ function mostrarindia() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE SUDAFRICA
@@ -239,8 +238,8 @@ function mostrarsudafrica() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE MARRUECOS
@@ -255,7 +254,7 @@ function mostrarmarruecos() {
         { transform: "translateX(-380px)" },
         { duration: 3000, fill: "forwards" }
     )
-    pin.style.top = "170px";
+    pin.style.top = "160px";
     pin.style.left = "85px";
     titulo.innerHTML = "Marruecos"
 
@@ -271,8 +270,8 @@ function mostrarmarruecos() {
 
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE AUSTRALIA
@@ -302,8 +301,8 @@ function mostraraustralia() {
     fotomostrar.setAttribute("src", "australia.png")
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE NUEVA ZELANDA
@@ -317,7 +316,7 @@ function mostrarnv() {
         { transform: "translateX(-760px)" },
         { duration: 3000, fill: "forwards" }
     )
-    pin.style.top = "385px";
+    pin.style.top = "375px";
     pin.style.left = "270px";
     titulo.innerHTML = "Nueva Zelanda"
 
@@ -331,9 +330,9 @@ function mostrarnv() {
     fotomostrar.setAttribute("src", "nuevazelanda.png")
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="block"
-    document.getElementById("textoinicio").style.display ="none"
-    
+    document.getElementById("regresar").style.display = "block"
+    document.getElementById("textoinicio").style.display = "none"
+
 }
 
 //ELEMENTOS PARA MOSTRAR EL CONTENIDO DE VENEZUELA
@@ -353,11 +352,11 @@ function mostrarve() {
      Producto interno bruto (PIB): 113.055 M€`
 
     fotomostrar = document.querySelector("img")
-    fotomostrar.setAttribute("src","venezuela.png")
+    fotomostrar.setAttribute("src", "venezuela.png")
 
-    
+
     document.getElementById("campo").style.display = "block"
     document.getElementById("bandera").style.display = "block"
-    document.getElementById("regresar").style.display ="none"
-    document.getElementById("textoinicio").style.display ="none"
+    document.getElementById("regresar").style.display = "none"
+    document.getElementById("textoinicio").style.display = "none"
 }
